@@ -9,14 +9,14 @@ let div_cronometro = document.querySelector(".cronometro");
 let boton = document.querySelector(".boton");
 
 boton.addEventListener("click", () => {
+    
     let segundos = parseInt(document.querySelector(".input").value);
     let minutos = parseInt(document.querySelector(".input1").value); 
     
     document.querySelector(".input").value = "";
     document.querySelector(".input1").value = "";
 
-    // Llamar a la función iniciar_cronometro con los valores actualizados
-    iniciar_cronometro(minutos, segundos);
+    iniciar_cronometro(minutos, segundos);  
 });
 
 function iniciar_cronometro(minutos, segundos) {
